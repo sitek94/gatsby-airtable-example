@@ -1,4 +1,4 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -16,8 +16,10 @@ module.exports = {
             baseId: `appQL2HrfEBsSWQeV`,
             tableName: `table-one`,
           },
-        ]
+        ],
       },
     },
+    'gatsby-plugin-material-ui',
+    'gatsby-theme-material-ui',
   ],
 };
