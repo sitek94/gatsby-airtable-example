@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import tw from 'twin.macro';
 import Carousel from '../components/carousel';
-import Navbar from '../components/navbar';
+import Layout from '../components/layout';
 
 export const query = graphql`
   {
@@ -19,19 +19,14 @@ export const query = graphql`
   }
 `;
 
-const Button = tw.button`
-  bg-blue-500 hover:bg-blue-800 text-white p-2 rounded
-`;
-
 // markup
 const IndexPage = ({ data }) => {
   return (
-    <div className="container">
-      <Navbar />
+    <Layout>
       <Main>
         <Carousel />
       </Main>
-    </div>
+    </Layout>
   );
 };
 

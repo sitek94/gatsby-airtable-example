@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { css } from '@emotion/react';
-import tw from 'twin.macro';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
@@ -41,7 +40,7 @@ export default function Carousel() {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="/"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
                   Realizacje
@@ -49,7 +48,7 @@ export default function Carousel() {
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="/"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                 >
                   Kalkulator

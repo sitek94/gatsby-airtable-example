@@ -5,16 +5,19 @@ import tw from 'twin.macro';
 export default function Navbar() {
   return (
     <Nav>
-      <Logo>Szklane</Logo>
-      
-      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize">
-        <NavLink to="#">Strona główna</NavLink>
+      <Logo to="/">Szklane</Logo>
 
-        <NavLink to="#">Kontakt</NavLink>
+      <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize">
+        <NavLink to="/">Strona główna</NavLink>
+
 
         <NavLink to="#">Realizacje</NavLink>
 
         <NavLink to="#">Kalkulator</NavLink>
+
+        <NavLink to="/gallery">Galeria</NavLink>
+
+        <NavLink to="#">Kontakt</NavLink>
       </div>
     </Nav>
   );
