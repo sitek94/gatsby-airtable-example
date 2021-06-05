@@ -26,7 +26,9 @@ const IndexPage = ({ data }) => {
       <Toolbar />
       <ul>
         {data.allAirtable.nodes.map(node => (
-          <li key={node.recordId}>{node.data.Name} - {node.data.Notes} - {node.data.Price}</li>
+          <li key={node.recordId}>
+            {node.data.Name} - {node.data.Notes} - {node.data.Price}
+          </li>
         ))}
       </ul>
     </main>
