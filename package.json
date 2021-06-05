@@ -17,16 +17,22 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.6",
     "dotenv": "^8.6.0",
     "gatsby": "^3.4.1",
     "gatsby-source-airtable": "^2.1.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "tailwindcss": "^2.1.4"
   },
   "devDependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "gatsby-plugin-emotion": "^6.6.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "twin.macro": "^2.4.2"
   },
   "lint-staged": {
     "*.--write": "prettier --write"

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import tw from 'twin.macro';
 
 export const query = graphql`
   {
@@ -16,6 +17,10 @@ export const query = graphql`
   }
 `;
 
+const Button = tw.button`
+  bg-blue-500 hover:bg-blue-800 text-white p-2 rounded
+`
+
 // markup
 const IndexPage = ({ data }) => {
   return (
@@ -27,6 +32,7 @@ const IndexPage = ({ data }) => {
           </li>
         ))}
       </ul>
+      <Button>Activate</Button>
     </main>
   );
 };
