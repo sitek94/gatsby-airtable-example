@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import tw from 'twin.macro';
 import Carousel from '../components/carousel';
+import Navbar from '../components/navbar';
 
 export const query = graphql`
   {
@@ -25,9 +26,12 @@ const Button = tw.button`
 // markup
 const IndexPage = ({ data }) => {
   return (
-    <Main>
-      <Carousel />
-    </Main>
+    <div className="container">
+      <Navbar />
+      <Main>
+        <Carousel />
+      </Main>
+    </div>
   );
 };
 
