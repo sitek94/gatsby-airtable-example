@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "format": "prettier \"**/*.+(js|ts|tsx)\" --write"
+    "format": "prettier \"**/*.+(js|ts|tsx)\" --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -26,6 +27,11 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.1"
+  },
+  "lint-staged": {
+    "*.--write": "prettier --write"
   }
 }
