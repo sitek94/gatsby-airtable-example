@@ -17,7 +17,7 @@ export default function Navbar() {
 
         <NavLink to="/gallery">Galeria</NavLink>
 
-        <NavLink to="#">Kontakt</NavLink>
+        <NavLink to="/contact">Kontakt</NavLink>
       </div>
     </Nav>
   );
