@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import Navbar from '../components/navbar';
-import { Toolbar } from '@material-ui/core';
 
 export const query = graphql`
   {
@@ -22,8 +20,6 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <main>
-      <Navbar />
-      <Toolbar />
       <ul>
         {data.allAirtable.nodes.map(node => (
           <li key={node.recordId}>
