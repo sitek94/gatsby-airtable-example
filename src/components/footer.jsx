@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="px-6">
               <div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                 >
                   Brand
@@ -23,7 +23,7 @@ export default function Footer() {
 
               <div className="flex mt-4 -mx-2">
                 <a
-                  href="#"
+                  href="/"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Linkden"
                 >
@@ -33,7 +33,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Facebook"
                 >
@@ -43,7 +43,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Twitter"
                 >
@@ -62,19 +62,19 @@ export default function Footer() {
                   About
                 </h3>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Company
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   community
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Careers
@@ -86,19 +86,19 @@ export default function Footer() {
                   Blog
                 </h3>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Tec
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Music
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Videos
@@ -110,19 +110,19 @@ export default function Footer() {
                   Products
                 </h3>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Mega cloud
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Aperion UI
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                   Meraki UI
