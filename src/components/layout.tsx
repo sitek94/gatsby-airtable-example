@@ -4,8 +4,8 @@ import Footer from './footer';
 import Navbar from './navbar';
 
 type Props = {
-  noFooter: boolean;
-  navbarSpacer: boolean;
+  noFooter?: boolean;
+  navbarSpacer?: boolean;
   children: React.ReactNode;
 };
 

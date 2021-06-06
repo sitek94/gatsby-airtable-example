@@ -13,7 +13,7 @@ export default function Navbar() {
 
         <NavLink to="/process">Nasz proces</NavLink>
 
-        <NavLink to="#">Kalkulator</NavLink>
+        <NavLink to="/calculator">Kalkulator</NavLink>
 
         <NavLink to="/gallery">Galeria</NavLink>
 
