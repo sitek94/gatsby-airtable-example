@@ -18,6 +18,8 @@ export default function Navbar() {
         <NavLink to="/gallery">Galeria</NavLink>
 
         <NavLink to="/contact">Kontakt</NavLink>
+
+        <NavLink to="/netlify">Netlify</NavLink>
       </div>
     </Nav>
   );

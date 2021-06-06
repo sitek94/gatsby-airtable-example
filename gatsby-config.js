@@ -13,12 +13,27 @@ module.exports = {
         apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: `appQL2HrfEBsSWQeV`,
-            tableName: `table-one`,
+            baseId: 'appQL2HrfEBsSWQeV',
+            tableName: 'table-one',
           },
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/blog/`,
+      },
+    },
     'gatsby-plugin-emotion',
+    'gatsby-plugin-netlify-cms',
   ],
 };

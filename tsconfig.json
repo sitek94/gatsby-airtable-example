@@ -5,7 +5,6 @@
     "moduleResolution": "node",
     "lib": ["dom", "es2017"],
     "allowJs": true,
-    "types": ["@emotion/core"],
     // "checkJs": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
