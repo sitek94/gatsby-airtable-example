@@ -11,7 +11,7 @@ export default function Navbar() {
         <NavLink to="/">Strona główna</NavLink>
 
 
-        <NavLink to="#">Realizacje</NavLink>
+        <NavLink to="/process">Nasz proces</NavLink>
 
         <NavLink to="#">Kalkulator</NavLink>
 
