@@ -4,24 +4,9 @@ import Layout from '../components/layout';
 export default function Contact() {
   return (
     <Layout>
-      <main className="h-screen flex items-center">
-        <div className="absolute inset-0 bg-gray-300">
-          <iframe
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
-            title="map"
-            scrolling="no"
-            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Pultusk+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-            style={{
-              filter: 'grayscale(1) contrast(1.2) opacity(0.4)',
-            }}
-          ></iframe>
-        </div>
-        <div className="container px-5 py-24 mx-auto flex">
-          <div className="z-50 w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+      <main className="h-screen flex items-center bg-gray-600">
+        <div className="container px-5 mx-auto flex">
+          <div className="w-full max-w-2xl px-6 py-4 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
             <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-white">
               Get in touch
             </h2>

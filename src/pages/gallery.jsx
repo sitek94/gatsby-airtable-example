@@ -70,10 +70,10 @@ const itemsRight = [
 
 export default function Gallery() {
   return (
-    <Layout>
-      <section className="text-gray-600 body-font">
-        <div className="pt-20 flex flex-wrap">
-          <div className="flex flex-wrap mx-1">
+    <Layout navbarSpacer>
+      <div className="text-gray-600 body-font">
+        <div className="flex flex-wrap">
+          <div className="flex flex-wrap m-1">
             <div className="flex flex-wrap w-1/2">
               {itemsLeft.map(({ src, size }, i) => (
                 <div
@@ -104,7 +104,7 @@ export default function Gallery() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 }

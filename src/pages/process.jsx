@@ -5,7 +5,7 @@ import img from '../images/carousel-1.jpg'
 export default function Process() {
   return (
     <Layout>
-      <section className="text-gray-600 body-font">
+      <main className="h-screen flex items-center text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="flex flex-wrap w-full">
             <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
@@ -152,7 +152,7 @@ export default function Process() {
             />
           </div>
         </div>
-      </section>
+      </main>
     </Layout>
   );
 }
