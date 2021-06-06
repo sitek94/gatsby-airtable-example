@@ -3,6 +3,9 @@ require('dotenv').config({
 });
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     title: 'gatsby-airtable-example',
   },
@@ -31,6 +34,12 @@ module.exports = {
       options: {
         name: 'blog',
         path: `${__dirname}/blog/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.mdx', '.md'],
       },
     },
     'gatsby-plugin-emotion',
