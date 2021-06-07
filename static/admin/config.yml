@@ -14,3 +14,15 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+
+  - name: photos
+    label: Photo
+    folder: photos
+    create: true
+    fields:
+      - { label: Path, name: path }
+      - { label: Image, name: image, widget: image }
+      - { label: Alt Text, name: alt, widget: string }
+      - { label: Date, name: date, widget: datetime }
+
+  

@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier \"**/*.+(js|ts|tsx)\" --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "proxy": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
