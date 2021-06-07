@@ -13,8 +13,9 @@ import img9 from '../images/fake-9.jpg';
 import img10 from '../images/fake-10.jpg';
 import img11 from '../images/fake-11.jpg';
 import img12 from '../images/fake-1.jpg';
+import { graphql } from 'gatsby';
 
-const itemsLeft = [
+const items = [
   {
     src: img1,
     size: 'big',
@@ -36,12 +37,13 @@ const itemsLeft = [
     size: 'small',
   },
   {
+    src: img7,
+    size: 'big',
+  },
+  {
     src: img6,
     size: 'small',
   },
-];
-
-const itemsRight = [
   {
     src: img8,
     size: 'small',
@@ -51,7 +53,7 @@ const itemsRight = [
     size: 'small',
   },
   {
-    src: img7,
+    src: img10,
     size: 'big',
   },
   {
@@ -62,49 +64,57 @@ const itemsRight = [
     src: img12,
     size: 'small',
   },
-  {
-    src: img10,
-    size: 'big',
-  },
 ];
 
-export default function Gallery() {
+export default function Gallery({ data }) {
+  console.log(data);
   return (
     <Layout navbarSpacer>
       <div className="text-gray-600 body-font">
-        <div className="flex flex-wrap">
-          <div className="flex flex-wrap m-1">
-            <div className="flex flex-wrap w-1/2">
-              {itemsLeft.map(({ src, size }, i) => (
-                <div
-                  key={i}
-                  className={`md:p-2 p-1 w-${size === 'big' ? 'full' : '1/2'}`}
-                >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full object-center block"
-                    src={src}
-                  />
-                </div>
-              ))}
+        <div className="grid grid-cols-3 gap-1 m-2">
+          {items.map(({ src, size }, i) => {
+            return (
+              <div
+                key={i}
+                className={`md:p-2 p-1 ${size === 'big' ? 'col-span-2' : ''}`}
+              >
+                <img
+                  alt="gallery"
+                  className="w-full object-cover h-full object-center block"
+                  src={src}
+                />
+              </div>
+            );
+          })}
+          {data.allMdx.nodes.map(({ id, frontmatter }) => (
+            <div
+              key={id}
+              className={`md:p-2 p-1`}
+            >
+              <img
+                alt="gallery"
+                className="w-full object-cover h-full object-center block"
+                src={`http://localhost:8000/${frontmatter.image}`}
+              />
             </div>
-            <div className="flex flex-wrap w-1/2">
-              {itemsRight.map(({ src, size }, i) => (
-                <div
-                  key={i}
-                  className={`md:p-2 p-1 w-${size === 'big' ? 'full' : '1/2'}`}
-                >
-                  <img
-                    alt="gallery"
-                    className="w-full object-cover h-full object-center block"
-                    src={src}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </Layout>
   );
 }
+
+export const query = graphql`
+  query Photos {
+    allMdx(filter: { fileAbsolutePath: { regex: "/(photos)/" } }) {
+      nodes {
+        id
+        frontmatter {
+          date
+          alt
+          image
+        }
+      }
+    }
+  }
+`;
