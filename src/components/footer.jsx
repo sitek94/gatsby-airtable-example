@@ -1,4 +1,5 @@
 import * as React from 'react';
+import tw from 'twin.macro';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
             <div className="px-6">
               <div>
                 <a
-                  href="/"
+                  href="#"
                   className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
                 >
                   Brand
@@ -17,13 +18,12 @@ export default function Footer() {
               </div>
 
               <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, nisi! Id.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nisi! Id.
               </p>
 
               <div className="flex mt-4 -mx-2">
                 <a
-                  href="/"
+                  href="#"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Linkden"
                 >
@@ -33,7 +33,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="/"
+                  href="#"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Facebook"
                 >
@@ -43,7 +43,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                  href="/"
+                  href="#"
                   className="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   aria-label="Twitter"
                 >
@@ -58,87 +58,30 @@ export default function Footer() {
           <div className="mt-6 lg:mt-0 lg:flex-1">
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
               <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  About
-                </h3>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Company
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  community
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Careers
-                </a>
+                <H3>About</H3>
+                <Link href="#">Company</Link>
+                <Link href="#">community</Link>
+                <Link href="#">Careers</Link>
               </div>
 
               <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Blog
-                </h3>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Tec
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Music
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Videos
-                </a>
+                <H3>Blog</H3>
+                <Link href="#">Tec</Link>
+                <Link href="#">Music</Link>
+                <Link href="#">Videos</Link>
               </div>
 
               <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Products
-                </h3>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Mega cloud
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Aperion UI
-                </a>
-                <a
-                  href="/"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Meraki UI
-                </a>
+                <H3>Products</H3>
+                <Link href="#">Mega cloud</Link>
+                <Link href="#">Aperion UI</Link>
+                <Link href="#">Meraki UI</Link>
               </div>
 
               <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Contact
-                </h3>
-                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  +1 526 654 8965
-                </span>
-                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  example@email.com
-                </span>
+                <H3>Contact</H3>
+                <ContactItem>+1 526 654 8965</ContactItem>
+                <ContactItem>example@email.com</ContactItem>
               </div>
             </div>
           </div>
@@ -147,11 +90,21 @@ export default function Footer() {
         <hr className="h-px my-6 bg-gray-300 border-none dark:bg-gray-700" />
 
         <div>
-          <p className="text-center text-gray-800 dark:text-white">
-            © Brand 2020 - All rights reserved
-          </p>
+          <p className="text-center text-gray-800 dark:text-white">© Brand 2020 - All rights reserved</p>
         </div>
       </div>
     </footer>
   );
 }
+
+const H3 = tw.h3`
+  text-gray-700 uppercase dark:text-white
+`;
+
+const Link = tw.a`
+  block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline
+`;
+
+const ContactItem = tw.span`
+  block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline
+`;
