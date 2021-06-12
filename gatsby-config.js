@@ -1,4 +1,6 @@
-require('dotenv').config({
+import dotenv from 'dotenv';
+
+dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
@@ -18,6 +20,10 @@ module.exports = {
           {
             baseId: 'appQL2HrfEBsSWQeV',
             tableName: 'table-one',
+          },
+          {
+            baseId: 'appQL2HrfEBsSWQeV',
+            tableName: 'Gallery',
           },
         ],
       },
